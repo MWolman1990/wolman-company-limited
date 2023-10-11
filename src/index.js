@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Viewport from './Viewport'
+import About from './About'
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,12 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: 'viewport',
+        path: '/',
         element: <Viewport/>
+      },
+      {
+        path: 'about',
+        element: <About/>
       }
     ]
   },

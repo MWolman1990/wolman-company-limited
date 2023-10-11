@@ -42,7 +42,7 @@ body,
     height: 100%;
 }
 
-#viewport {
+.viewport {
     width: 80%;
     height: 100%;
 }
