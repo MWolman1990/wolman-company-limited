@@ -71,6 +71,13 @@ a:hover {
 #brand {
     color: red;
     font-size: 1rem;
+    padding: 0;
+}
+
+#brand img {
+    margin-top: 3rem;
+    width: 150px;
+    padding: 0;
 }
 
 #title {
