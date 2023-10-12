@@ -156,7 +156,8 @@ body,
     }
 
     #mini-menu ul li {
-        padding: .25rem;
+        padding: .5rem;
+        
     }
 
     .float-menu:hover > #mini-menu {
