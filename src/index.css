@@ -16,6 +16,16 @@ body,
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    padding: 0 !important;
+    color: #333
+}
+
+a:hover {
+    color: red;
+}
+
 #root {
     position: relative;
 }

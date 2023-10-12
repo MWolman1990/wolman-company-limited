@@ -1,15 +1,10 @@
 import React from 'react'
+import Menu from './Menu'
 
 const Sidebar = () => {
    return (
     <div id="sidebar">
-        <ul id="menu">
-            <li>Home</li>
-            <li>About WCL</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
+        <Menu/>
     </div>
    )
 }

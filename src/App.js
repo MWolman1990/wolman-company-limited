@@ -1,6 +1,7 @@
 import React from "react";
 import Header from './Header.js'
 import Content from './Content.js'
+import Menu from './Menu'
 
 const App = () => {
     return (
@@ -10,16 +11,9 @@ const App = () => {
             <div className="float-menu">
                 <div className="menu-button-container">
                     <div className="hamburger"></div>
-                    
                 </div>
                 <div id="mini-menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>About WCL</li>
-                        <li>Services</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                    </ul>
+                    <Menu/>
                 </div>
             </div>
         </div>
