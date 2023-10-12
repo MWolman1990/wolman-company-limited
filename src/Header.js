@@ -1,10 +1,11 @@
 import React from "react";
 
 const Header = () => {
+    console.log(window.innerWidth)
     return (
         <div id="header">
-            <h1 id="title">Wolman Company Limited</h1>
-            <h3 id="brand">WCL</h3>
+            <div id="title">Wolman Company Limited</div>
+            <div id="brand">WCL</div>
         </div>
     )
 }

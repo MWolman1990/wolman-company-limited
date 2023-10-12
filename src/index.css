@@ -16,6 +16,10 @@ body,
     height: 100vh;
 }
 
+#root {
+    position: relative;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -24,7 +28,6 @@ body,
 .container * {
     padding: 1rem;
 }
-
 #content {
     display: flex;
     height: 90%;
@@ -57,8 +60,108 @@ body,
 
 #brand {
     color: red;
+    font-size: 1rem;
 }
 
 #title {
     color: #333;
+    font-size: 2rem;
 }
+
+.float-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #title {
+        display: none;
+    }
+
+    #brand {
+        font-size: 3rem
+    }
+
+    #header {
+        justify-content: center;
+    }
+
+    .float-menu, .float-menu * {
+        padding: 0;
+    }
+
+    .float-menu {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        border-radius: 50%;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        display: block;
+        box-shadow: 3px 3px 10px #ccc;
+    }
+
+    .menu-button-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .hamburger {
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: red;
+        left: 25%;
+        top: 50%;
+        border-radius: 25%;
+        opacity: 50%;
+    }
+
+    .hamburger::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: red;
+        border-radius: 25%;
+        margin-top: .5rem;
+    }
+
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background-color: red;
+        border-radius: 25%;
+        margin-top: -.5rem;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #mini-menu {
+        width: 150px;
+        position: absolute;
+        right: 10px;
+        display: none;
+        padding-top: 5px;
+    }
+
+    #mini-menu ul {
+        list-style-type: none;
+        text-align: end;
+    }
+
+    #mini-menu ul li {
+        padding: .25rem;
+    }
+
+    .float-menu:hover > #mini-menu {
+        cursor: pointer;
+        display: block;
+    }
+}
+
