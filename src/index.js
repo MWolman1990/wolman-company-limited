@@ -9,6 +9,8 @@ import {
 import Viewport from './Viewport'
 import About from './About'
 import Services from './Services.js'
+import getBlog from './loaders/getBlog.js'
+import Article from './Article.js'
 
 const router = createBrowserRouter([
   {
@@ -26,7 +28,15 @@ const router = createBrowserRouter([
       {
         path: 'services',
         element: <Services/>
+      },
+      {
+        path: 'blog/:id',
+        element: <Article/>,
+        loader: async ({ params }) => {
+          return getBlog(params.id)
+        }
       }
+
     ]
   },
 

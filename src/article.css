@@ -1,0 +1,24 @@
+.article-header {
+    font-size: 2rem;
+    color: red;
+}
+
+.article-meta {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.article-data {
+    font-size: 1.25rem;
+}
+
+#article-container {
+    padding: 1rem;
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    #article-container {
+        width: 100%
+    }
+}
