@@ -11,6 +11,7 @@ import About from './About'
 import Services from './Services.js'
 import getBlog from './loaders/getBlog.js'
 import Article from './Article.js'
+import Projects from './Projects.js'
 
 const router = createBrowserRouter([
   {
@@ -35,8 +36,11 @@ const router = createBrowserRouter([
         loader: async ({ params }) => {
           return getBlog(params.id)
         }
+      },
+      {
+        path: 'projects',
+        element: <Projects/>
       }
-
     ]
   },
 
