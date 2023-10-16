@@ -12,6 +12,12 @@
     width: 50%
 }
 
+@media only screen and (max-width: 700px) {
+    #contact-info {
+        width: 100%;
+    }
+}
+
 #send-email-button {
     background-color: white;
     color: red;
