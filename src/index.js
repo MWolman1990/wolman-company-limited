@@ -12,6 +12,7 @@ import Services from './Services.js'
 import getBlog from './loaders/getBlog.js'
 import Article from './Article.js'
 import Projects from './Projects.js'
+import ContactInfo from './ContactInfo.js'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: 'projects',
         element: <Projects/>
+      },
+      {
+        path: 'contact',
+        element: <ContactInfo/>
       }
     ]
   },

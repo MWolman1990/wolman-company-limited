@@ -1,0 +1,21 @@
+.no-bold {
+    font-weight: 400;
+    padding: 0;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-info {
+    width: 50%
+}
+
+#send-email-button {
+    background-color: white;
+    color: red;
+    border: 0 !important;
+    font-size: 1.5rem;
+    text-align: start;
+}
