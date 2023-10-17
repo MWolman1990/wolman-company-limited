@@ -15,7 +15,7 @@ const Article = (props) => {
             <div className="article-meta">
                 {article.meta.date} - {article.meta.author}
             </div>
-            <div className="article-data">
+            <div id="article-data" className="article-data">
                 {article.data.split('\n').map((par) => <p style={{ padding: '0', marginBottom: '1rem'}}>{par}</p>)}
             </div>
         </div>
