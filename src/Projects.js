@@ -7,7 +7,7 @@ const Services = () => {
         <div id="services-content">
             <div className="service-item">
                 <div className="service-title">
-                    <a href="https://pokeboard-d891a9b23226.herokuapp.com/" target="_blank">PókeBoard</a>
+                    <a href="https://poke-board.com" target="_blank">PókeBoard</a>
                 </div>
                 <div className="service-stacks">
                     Create React App, React Router DOM, PokeAPI
