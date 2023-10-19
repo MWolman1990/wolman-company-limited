@@ -38,9 +38,9 @@ const blogs = [
             }
         })
 
-        If you understand coding, the concept is simple. The if(!ignore) line is asking if ignore is set to false (is the fact that ignore is false, true)? If ignore is false, the code will run. So, we get one run of the code no matter what now. At the end of our first run, we run another function that makes ignore equal to true. When the if statement checks if ignorse is false, it will get back true this time and the code will be skipped!
+        If you understand coding, the concept is simple. The if(!ignore) line is asking if ignore is set to false (is the fact that ignore is false, true)? If ignore is false, the code will run. So, we get one run of the code no matter what now. At the end of our first run, we run another function that makes ignore equal to true. When the if statement checks if ignore is false, it will get back true this time and the code will be skipped!
 
-        That's pretty much the jist of it
+        That's pretty much the jist of it. Feel free to contact me through the Contact form if you have any questions!
         `
     }
 ]
