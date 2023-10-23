@@ -3,18 +3,24 @@ import './contactinfo.css'
 import emailjs from 'emailjs-com'
 
 function ContactInfo() {
+    console.log('hello')
     function sendEmail(e) {
         e.preventDefault()
+        e.target.children[0].value = ""
+        e.target.children[2].value = ""
+        e.target.children[4].value = ""
+        e.target.children[6].value = ""
         emailjs.sendForm('wcl_emails','template_fxtj51m',e.target,'KymWnfi1K5mYHnrDf')
-            .then((res) => console.log(res))
+            .then((res) => alert('Email has been sent'))
             .catch((err) => console.log(err))
     }
 
     return (
         <div id="contact-info">
             <h1>Contact Us</h1>
-            <h3>Email</h3>
+            <h3>Email - MATTHEW.WOLMAN@GMAIL.COM</h3>
             <form className="email-form" onSubmit={sendEmail}>
+                
                 <input type="text" name="from_name" />
                 <label>Name</label>
                 
